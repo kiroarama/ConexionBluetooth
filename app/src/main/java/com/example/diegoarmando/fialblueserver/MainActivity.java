@@ -54,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            File f = new File(Environment.getExternalStorageDirectory(), "tux.jpg");
+            File f = new File(Environment.getExternalStorageDirectory(), "texto.txt");//necesitas tener el archivo texto.txt en tu almacenamiento interno de tu android
             intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(f));
 
             PackageManager pm = getPackageManager();
